@@ -643,7 +643,8 @@ h1, h2, h3, h4, h5,
     font-style: italic; }
 
 .bg-light {
-  background: #ccc; }
+  background: #FFFFFF !important;
+}
 
 .team-member {
   position: relative;
@@ -2025,3 +2026,115 @@ h1, h2, h3, h4, h5,
   font-size: 16px;
 }
 
+.contact-section {
+
+  background-image: url(../images/textura.jpg);
+  background-size: 100%;
+  background-attachment: fixed;
+}
+
+.contact-section .container {
+  z-index: 2;
+  padding: 30px;
+}
+
+@media (min-width: 768px) {
+  .contact-section .container {
+    padding: 70px;
+  }
+}
+
+.contact-section .contact-info p a {
+  color: #59595e;
+}
+
+@media (min-width: 576px) {
+  .contact-section .container {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .contact-section .container {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .contact-section .container {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .contact-section .container {
+    max-width: 1140px;
+  }
+}
+
+.ftco-section {
+  padding: 8em 0;
+  position: relative;
+}
+
+.bg-contact {
+  background: #fff;
+}
+
+.contact-section .row {
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.logo-contacto {
+  background-image: url(../images/Logo.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+  height: 440px;
+  width: 510px;
+}
+
+@media (max-width: 1199px) {
+  .logo-contacto {
+    width: 425px;
+  }
+}
+
+@media (max-width: 991px) {
+  .logo-contacto {
+    width: 295px;
+    margin-right: 10px;
+  }
+}
+
+@media (max-width: 767px) {
+  .logo-contacto {
+    height: 300px;
+    width: 480px;
+    margin-bottom: 50px;
+    margin-right: 0px;
+    margin-left: 20px;
+  }
+
+}
+
+.form-control {
+  FONT-WEIGHT: 200;
+  height: 52px !important;
+  background: #fff !important;
+  color: #401746 !important;
+  font-size: 18px;
+  border-radius: 10px;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+}
+
+.form-control:focus, .form-control:active {
+  border-color: #404044;
+}
+
+textarea.form-control {
+  height: inherit !important;
+}
