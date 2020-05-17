@@ -84,7 +84,8 @@ h1, h2, h3, h4, h5,
     border: 2px solid #fff; }
     .btn.btn-outline-white:hover {
       background: #fff;
-      color: #32dbc6 !important; }
+      color: #401746 !important;
+    }
   .btn.btn-md {
     padding: 15px 30px;
     font-size: 12px;
@@ -409,12 +410,14 @@ h1, h2, h3, h4, h5,
           opacity: 1; }
 
 .site-mobile-menu {
+  opacity: 0.9;
+  background-color: #401746;
+  color: white;
   width: 300px;
   position: fixed;
   right: 0;
   z-index: 2000;
   padding-top: 20px;
-  background: #fff;
   height: calc(100vh);
   -webkit-transform: translateX(110%);
   -ms-transform: translateX(110%);
@@ -591,10 +594,20 @@ h1, h2, h3, h4, h5,
   .site-blocks-cover.inner-page-cover, .site-blocks-cover.inner-page-cover > .container > .row {
     min-height: 400px;
     height: calc(20vh); }
-  .site-blocks-cover h1 {
-    font-size: 3rem;
-    font-weight: 400;
-    color: #fff; }
+
+.site-blocks-cover h1 {
+  font-family: "Amatic SC";
+  font-size: 3rem;
+  font-weight: 400;
+  color: #fff;
+}
+
+.typewriter h1 {
+  font-family: "Amatic SC";
+  font-size: 3rem;
+  font-weight: 400;
+  color: #401746;
+}
     @media (max-width: 991.98px) {
       .site-blocks-cover h1 {
         font-size: 2rem; } }
@@ -1885,6 +1898,10 @@ h1, h2, h3, h4, h5,
   position: relative;
 }
 
+.services .icon.color-3:hover {
+  background: #B9A7C8;
+}
+
 .services .icon:before, .services .icon:after {
   position: absolute;
   left: 0;
@@ -2000,6 +2017,18 @@ h1, h2, h3, h4, h5,
   font-size: 20px;
 }
 
+.fadeInUp {
+  -webkit-animation-name: fadeInUp;
+  animation-name: fadeInUp;
+}
+
+.ftco-animated {
+  -webkit-animation-duration: .5s;
+  animation-duration: .5s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
 .list-services {
   margin-top: 40px;
   padding: 0;
@@ -2024,6 +2053,18 @@ h1, h2, h3, h4, h5,
 
 .block-6 .media-body p {
   font-size: 16px;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #401746;
+  border-color: #401746;
+}
+
+.btn-primary:hover {
+  color: #fff;
+  background-color: #B9A7C8;
+  border-color: #B9A7C8;
 }
 
 .contact-section {
@@ -2137,4 +2178,192 @@ h1, h2, h3, h4, h5,
 
 textarea.form-control {
   height: inherit !important;
+}
+
+.site-mobile-menu-header {
+  background-color: #401746;
+}
+
+.site-mobile-menu-body .site-nav-wrap .nav-link {
+  color: white;
+}
+
+.site-mobile-menu-body .site-nav-wrap .nav-link:hover {
+  color: white;
+}
+
+.site-mobile-menu .site-nav-wrap li .active {
+  color: white;
+  font-weight: bolder;
+}
+
+ftco-loader {
+  position: fixed;
+  width: 96px;
+  height: 96px;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  background-color: rgba(255, 255, 255, 0.9);
+  -webkit-box-shadow: 0px 24px 64px rgba(0, 0, 0, 0.24);
+  box-shadow: 0px 24px 64px rgba(0, 0, 0, 0.24);
+  border-radius: 16px;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: opacity .2s ease-out, visibility 0s linear .2s;
+  -o-transition: opacity .2s ease-out, visibility 0s linear .2s;
+  transition: opacity .2s ease-out, visibility 0s linear .2s;
+  z-index: 1000;
+}
+
+#ftco-loader.fullscreen {
+  padding: 0;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-transform: none;
+  -ms-transform: none;
+  transform: none;
+  background-color: #fff;
+  border-radius: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+#ftco-loader.show {
+  -webkit-transition: opacity .4s ease-out, visibility 0s linear 0s;
+  -o-transition: opacity .4s ease-out, visibility 0s linear 0s;
+  transition: opacity .4s ease-out, visibility 0s linear 0s;
+  visibility: visible;
+  opacity: 1;
+}
+
+#ftco-loader .circular {
+  -webkit-animation: loader-rotate 5s linear infinite;
+  animation: loader-rotate 5s linear infinite;
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  left: calc(50% - 100px);
+  top: calc(50% - 100px);
+  display: block;
+  -webkit-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+
+#ftco-loader .path {
+  stroke-dasharray: 1, 200;
+  stroke-dashoffset: 0;
+  -webkit-animation: loader-dash 1.5s ease-in-out infinite;
+  animation: loader-dash 1.5s ease-in-out infinite;
+  stroke-linecap: round;
+}
+
+@-webkit-keyframes loader-rotate {
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes loader-rotate {
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes loader-dash {
+  0% {
+    stroke-dasharray: 1, 200;
+    stroke-dashoffset: 0;
+  }
+  50% {
+    stroke-dasharray: 89, 200;
+    stroke-dashoffset: -35px;
+  }
+  100% {
+    stroke-dasharray: 89, 200;
+    stroke-dashoffset: -136px;
+  }
+}
+
+@keyframes loader-dash {
+  0% {
+    stroke-dasharray: 1, 200;
+    stroke-dashoffset: 0;
+  }
+  50% {
+    stroke-dasharray: 890, 200;
+    stroke-dashoffset: -35px;
+  }
+  100% {
+    stroke-dasharray: 890, 200;
+    stroke-dashoffset: -136px;
+  }
+}
+
+canvas {
+  display: block;
+  width: 100%;
+  height: 100vh;
+  z-index: 2;
+  position: absolute;
+  pointer-events: none;
+  opacity: 30%;
+  /*background: #000;*/
+}
+
+.circulo {
+  background-image: url(../images/circulo.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 420px;
+  height: 420px;
+  z-index: 1000;
+  margin: auto;
+  margin-bottom: 25px;
+}
+
+.marcoFoto {
+  overflow: hidden; /*esta propiedad evita que la imagen ocupe mas espacio que su contenedor*/
+  width: 40%;
+  border: 5px solid #FFF;
+  box-sizing: border-box;
+  float: left;
+  border-radius: 50%;
+}
+
+.marcoFoto img {
+  transition: all .4s ease;
+  width: 100%;
+}
+
+.marcoFoto img:hover {
+  transform: scale(1.1); /*cuando nos posicionamos sobre la imagen con esta propiedad aumentamos su escala y ademas la giramos*/
+  opacity: 0.8;
+}
+
+.contenedorFoto {
+  margin: 100px auto;
+  max-width: 960px;
+  width: 100%;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.fraseInicio {
+  font-size: 30px !important;
+}
+
+.btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show > .btn-primary.dropdown-toggle {
+  color: #fff;
+  background-color: #B9A7C8;
+  border-color: #B9A7C8;
 }

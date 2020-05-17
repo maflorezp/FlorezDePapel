@@ -8,17 +8,25 @@ jQuery(document).ready(function($) {
 
 	"use strict";
 
-	
+	// loader
+	var loader = function () {
+		setTimeout(function () {
+			if ($('#ftco-loader').length > 0) {
+				$('#ftco-loader').removeClass('show');
+			}
+		}, 1);
+	};
+	loader();
 
-	var siteMenuClone = function() {
+	var siteMenuClone = function () {
 
-		$('.js-clone-nav').each(function() {
+		$('.js-clone-nav').each(function () {
 			var $this = $(this);
 			$this.clone().attr('class', 'site-nav-wrap').appendTo('.site-mobile-menu-body');
 		});
 
 
-		setTimeout(function() {
+		setTimeout(function () {
 			
 			var counter = 0;
       $('.site-mobile-menu .has-children').each(function(){

@@ -63,6 +63,11 @@
 </div>
 <!-- Social media nav section-->
 
+<!-- loader -->
+<div class="show fullscreen" id="ftco-loader">
+    <img class="circular" src="images/logo-only.svg"/>
+</div>
+
 
 <div class="site-wrap">
 
@@ -75,9 +80,7 @@
         <div class="site-mobile-menu-body"></div>
     </div>
 
-    <div class="border-bottom top-bar py-2 bg-dark" id="home-section">
-
-    </div>
+    <div class="border-bottom top-bar"></div>
 
     <header class="site-navbar py-4 bg-white js-sticky-header site-navbar-target" role="banner">
 
@@ -122,11 +125,9 @@
 
                     <div class="row justify-content-center mb-4">
                         <div class="col-md-8 text-center">
-                            <h1>We Love To Build <span class="typed-words"></span></h1>
-                            <p class="lead mb-5">Free Web Template by <a href="#" target="_blank">Colorlib</a></p>
-                            <div><a class="btn btn-primary btn-md" data-fancybox data-ratio="2"
-                                    href="https://vimeo.com/317571768">Watch
-                                Video</a></div>
+
+                            <p class="fraseInicio">• CREAR • EXPERIMENTAR • COMUNICAR •</p>
+                            <div><a class="btn btn-primary btn-md " href="#work-section">Ver</a></div>
                         </div>
                     </div>
 
@@ -139,7 +140,7 @@
     <section class="site-section" id="work-section">
         <div class="container">
             <div class="row mb-5 justify-content-center">
-                <div class="col-md-8 text-center">
+                <div class="col-md-8 text-center" data-aos="fade-up">
                     <div class="subheading">Portafolio</div>
                     <h2 class="text-black h1 site-section-heading text-center">Nuestro trabajo</h2>
                     <p class="lead">A continuación podrás obsevar las marcas con las que hemos trabajado y el resultado
@@ -148,10 +149,9 @@
             </div>
         </div>
         <div class="container-fluid">
-            <div class="row">
+            <div class="row" data-aos="fade-up">
                 <div class="col-md-6 col-lg-4">
-                    <a class="media-1" data-fancybox="gallery"
-                       href="images/florezDePapel-tarjeta-gif-design-branding.gif">
+                    <a class="media-1" href="proyecto-flórezdepapel.html" target="_blank">
                         <img alt="Image" class="img-fluid" src="images/florezDePapel-tarjeta-gif-design-branding.gif">
                         <div class="media-1-content">
                             <h2>Flórez de papel</h2>
@@ -209,7 +209,7 @@
     </section>
 
     <div class="site-section" id="about-section">
-        <div class="container">
+        <!--<div class="container">
             <div class="row mb-5">
 
                 <div class="col-md-5 ml-auto mb-5 order-md-2" data-aos="fade">
@@ -258,7 +258,37 @@
                 </div>
 
             </div>
+        </div>-->
+
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-6 text-center heading-section ftco-animate fadeInUp ftco-animated"
+                     data-aos="fade-up">
+                    <div class="subheading">Nosotros</div>
+                    <h2 class="text-black h1 site-section-heading text-center">¿Quiénes somos?</h2>
+                </div>
+
+                <div class="row block-9" data-aos="fade-up" style="justify-content: center;">
+                    <div class="marcoFoto">
+                        <img alt="Imagen Zoom CSS" src="images/LuisaFernandaFlorez.jpg">
+                    </div>
+                    <div class="col-md-6 pr-md-5" style="padding-left: 48px; padding-right: 10px;">
+                        <div class="typewriter">
+                            <h1>Soy <span class="typed-words"></span></h1>
+                        </div>
+                        <p>
+                            Ayudo a aquellas personas que quieren dar a conocer sus ideas al mercado de una manera
+                            llamativa, por medio de ideas creativas que logren generar distintas sensaciones,
+                            comunicando de manera clara y eficaz, con diseños personalizados creados junto al cliente.
+
+                            Me gusta experimentar e implementar técnicas manuales y digitales que ayuden crear una
+                            conexión íntima entre la marca y el usuario.
+                        </p>
+                    </div>
+                </div>
+            </div>
         </div>
+
     </div>
 
     <section class="site-section border-bottom" id="services-section">
@@ -271,86 +301,9 @@
                         y llegar al usuario de una manera clara. Dentro de nuestros servicios tenemos:</p>
                 </div>
             </div>
-            <!--<div class="row align-items-stretch">
-                <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up">
-                    <div class="unit-4 d-flex">
-                        <div class="unit-4-icon mr-4"><span class="text-primary icon-laptop2"></span></div>
-                        <div>
-                            <h3>Web Design</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae vitae
-                                eligendi
-                                at.</p>
-                            <p><a href="#">Learn More</a></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up" data-aos-delay="100">
-                    <div class="unit-4 d-flex">
-                        <div class="unit-4-icon mr-4"><span class="text-primary icon-shopping_cart"></span></div>
-                        <div>
-                            <h3>eCommerce</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae vitae
-                                eligendi
-                                at.</p>
-                            <p><a href="#">Learn More</a></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up" data-aos-delay="200">
-                    <div class="unit-4 d-flex">
-                        <div class="unit-4-icon mr-4"><span class="text-primary icon-question_answer"></span></div>
-                        <div>
-                            <h3>Web Applications</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae vitae
-                                eligendi
-                                at.</p>
-                            <p><a href="#">Learn More</a></p>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up" data-aos-delay="300">
-                    <div class="unit-4 d-flex">
-                        <div class="unit-4-icon mr-4"><span class="text-primary icon-format_paint"></span></div>
-                        <div>
-                            <h3>Branding</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae vitae
-                                eligendi
-                                at.</p>
-                            <p><a href="#">Learn More</a></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up" data-aos-delay="400">
-                    <div class="unit-4 d-flex">
-                        <div class="unit-4-icon mr-4"><span class="text-primary icon-extension"></span></div>
-                        <div>
-                            <h3>Copy Writing</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae vitae
-                                eligendi
-                                at.</p>
-                            <p><a href="#">Learn More</a></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up" data-aos-delay="500">
-                    <div class="unit-4 d-flex">
-                        <div class="unit-4-icon mr-4"><span class="text-primary icon-phonelink"></span></div>
-                        <div>
-                            <h3>Mobile Applications</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae vitae
-                                eligendi
-                                at.</p>
-                            <p><a href="#">Learn More</a></p>
-                        </div>
-                    </div>
-                </div>
-
-            </div>-->
             <div class="row">
                 <div class="col-md-6 col-lg-3 d-flex align-self-stretch ftco-animate fadeInUp ftco-animated">
-                    <div class="media block-6 services d-block text-center">
+                    <div class="media block-6 services d-block text-center" data-aos="fade-up">
                         <div class="d-flex justify-content-center">
                             <div class="icon color-3 d-flex justify-content-center mb-3"><span
                                     class="align-self-center icon-file-o"></span></div>
@@ -362,7 +315,7 @@
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-3 d-flex align-self-stretch ftco-animate fadeInUp ftco-animated">
-                    <div class="media block-6 services d-block text-center">
+                    <div class="media block-6 services d-block text-center" data-aos="fade-up">
                         <div class="d-flex justify-content-center">
                             <div class="icon color-1 d-flex justify-content-center mb-3"><span
                                     class="align-self-center icon-shopping-bag"></span></div>
@@ -374,7 +327,7 @@
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-3 d-flex align-self-stretch ftco-animate fadeInUp ftco-animated">
-                    <div class="media block-6 services d-block text-center">
+                    <div class="media block-6 services d-block text-center" data-aos="fade-up">
                         <div class="d-flex justify-content-center">
                             <div class="icon color-2 d-flex justify-content-center mb-3"><span
                                     class="align-self-center icon-video-camera"></span></div>
@@ -387,7 +340,7 @@
                 </div>
 
                 <div class="col-md-6 col-lg-3 d-flex align-self-stretch ftco-animate fadeInUp ftco-animated">
-                    <div class="media block-6 services d-block text-center">
+                    <div class="media block-6 services d-block text-center" data-aos="fade-up">
                         <div class="d-flex justify-content-center">
                             <div class="icon color-4 d-flex justify-content-center mb-3"><span
                                     class="align-self-center icon-more"></span></div>
@@ -403,88 +356,9 @@
         </div>
     </section>
 
-    <!--<section class="site-section bg-light" id="contact-section">
-        <div class="container">
-            <div class="row mb-5">
-                <div class="col-12 text-center">
-                    <div class="subheading">Contacto</div>
-                    <h2 class="text-black h1 site-section-heading text-center">Envíanos un mensaje</h2>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-7 mb-5">
-
-
-                    <form action="#" class="p-5 bg-white">
-
-                        <h2 class="h4 text-black mb-5">Contact Form</h2>
-
-                        <div class="row form-group">
-                            <div class="col-md-6 mb-3 mb-md-0">
-                                <label class="text-black" for="fname">First Name</label>
-                                <input class="form-control" id="fname" type="text">
-                            </div>
-                            <div class="col-md-6">
-                                <label class="text-black" for="lname">Last Name</label>
-                                <input class="form-control" id="lname" type="text">
-                            </div>
-                        </div>
-
-                        <div class="row form-group">
-
-                            <div class="col-md-12">
-                                <label class="text-black" for="email">Email</label>
-                                <input class="form-control" id="email" type="email">
-                            </div>
-                        </div>
-
-                        <div class="row form-group">
-
-                            <div class="col-md-12">
-                                <label class="text-black" for="subject">Subject</label>
-                                <input class="form-control" id="subject" type="subject">
-                            </div>
-                        </div>
-
-                        <div class="row form-group">
-                            <div class="col-md-12">
-                                <label class="text-black" for="message">Message</label>
-                                <textarea class="form-control" cols="30" id="message" name="message"
-                                          placeholder="Write your notes or questions here..."
-                                          rows="7"></textarea>
-                            </div>
-                        </div>
-
-                        <div class="row form-group">
-                            <div class="col-md-12">
-                                <input class="btn btn-primary btn-md text-white" type="submit" value="Send Message">
-                            </div>
-                        </div>
-
-
-                    </form>
-                </div>
-                <div class="col-md-5">
-
-                    <div class="p-4 mb-3 bg-white">
-                        <p class="mb-0 font-weight-bold">Address</p>
-                        <p class="mb-4">203 Fake St. Mountain View, San Francisco, California, USA</p>
-
-                        <p class="mb-0 font-weight-bold">Phone</p>
-                        <p class="mb-4"><a href="#">+1 232 3235 324</a></p>
-
-                        <p class="mb-0 font-weight-bold">Email Address</p>
-                        <p class="mb-0"><a href="#">youremail@domain.com</a></p>
-
-                    </div>
-
-                </div>
-            </div>
-        </div>
-    </section>-->
 
     <section class="ftco-section contact-section ftco-degree-bg" id="contact-section">
-        <div class="container bg-light" style="border-radius: 40px;">
+        <div class="container bg-light" data-aos="fade-up" style="border-radius: 40px;">
             <div class="row d-flex mb-5 contact-info">
 
                 <div class="text-center heading-section ftco-animate fadeInUp ftco-animated" style="width: 100%;">
@@ -530,42 +404,40 @@
     <footer class="site-footer">
         <div class="container">
             <div class="row">
-                <div class="col-md-9">
-                    <div class="row">
-                        <div class="col-md-5">
-                            <h2 class="footer-heading mb-4">FlóreZ de papel</h2>
-                            <p>Ayudo a aquellas personas que quieren dar a conocer sus ideas al mercado de una manera
-                                llamativa, por
-                                medio de ideas
-                                creativas que logren generar distintas sensaciones. Si deseas llevar tus ideas a la
-                                realidad ponte en
-                                contacto.</p>
-                        </div>
-                        <div class="col-md-3 ml-auto">
-                            <h2 class="footer-heading mb-4">Información de contacto</h2>
-                            <ul class="list-unstyled">
-                                <li><a href="#">Medellín, Colombia</a></li>
-                                <li><a href="#">+57 300 243 6198</a></li>
-                                <li><a href="#">florezdepapel@hotmail.com</a></li>
-                            </ul>
-                        </div>
-                        <div class="col-md-3">
-                            <h2 class="footer-heading mb-4">Redes sociales</h2>
-                            <a class="pl-0 pr-3" href="https://www.behance.net/florezdepapel" target="_blank"><span
-                                    class="icon-behance"></span></a>
-                            <a class="pl-3 pr-3" href="https://www.instagram.com/florezdepapel/" target="_blank"><span
-                                    class="icon-instagram"></span></a>
-                            <a class="pl-3 pr-3" href="https://www.linkedin.com/in/luisafernandaflorez" target="_blank"><span
-                                    class="icon-linkedin"></span></a>
-                            <a class="pl-3 pr-3" href="https://www.facebook.com/florezdepapel/" target="_blank"><span
-                                    class="icon-facebook"></span></a>
-                            <a class="pl-3 pr-3"
-                               href="https://api.whatsapp.com/send?phone=573002436198&text=Hola,%20me%20gustar%C3%ADa%20saber%20m%C3%A1s%20de%20tus%20servicios"
-                               target="_blank"><span class="icon-whatsapp"></span></a>
-                        </div>
+                <div class="col-md-4">
+                    <h2 class="footer-heading mb-4">FlóreZ de papel</h2>
+                    <p>Ayudo a aquellas personas que quieren dar a conocer sus ideas al mercado de una manera
+                        llamativa, por
+                        medio de ideas
+                        creativas que logren generar distintas sensaciones. Si deseas llevar tus ideas a la
+                        realidad ponte en
+                        contacto.</p>
+                </div>
+                <div class="col-md-4">
+                    <h2 class="footer-heading mb-4">Información de contacto</h2>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Medellín, Colombia</a></li>
+                        <li><a href="#">+57 300 243 6198</a></li>
+                        <li><a href="#">florezdepapel@hotmail.com</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h2 class="footer-heading mb-4">Redes sociales</h2>
+                    <div class="text-center">
+                        <a class="pl-0 pr-3" href="https://www.behance.net/florezdepapel" target="_blank"><span
+                                class="icon-behance"></span></a>
+                        <a class="pl-3 pr-3" href="https://www.instagram.com/florezdepapel/" target="_blank"><span
+                                class="icon-instagram"></span></a>
+                        <a class="pl-3 pr-3" href="https://www.linkedin.com/in/luisafernandaflorez"
+                           target="_blank"><span
+                                class="icon-linkedin"></span></a>
+                        <a class="pl-3 pr-3" href="https://www.facebook.com/florezdepapel/" target="_blank"><span
+                                class="icon-facebook"></span></a>
+                        <a class="pl-3 pr-3"
+                           href="https://api.whatsapp.com/send?phone=573002436198&text=Hola,%20me%20gustar%C3%ADa%20saber%20m%C3%A1s%20de%20tus%20servicios"
+                           target="_blank"><span class="icon-whatsapp"></span></a>
                     </div>
                 </div>
-
             </div>
             <div class="row pt-5 mt-5 text-center">
                 <div class="col-md-12">
@@ -604,15 +476,16 @@
 <script src="js/typed.js"></script>
 <script>
     var typed = new Typed('.typed-words', {
-        strings: ["Web Apps", " WordPress", " Mobile Apps"],
-        typeSpeed: 80,
-        backSpeed: 80,
-        backDelay: 4000,
-        startDelay: 1000,
+        strings: ["Luisa Fernanda Flórez", " diseñadora visual"],
+        typeSpeed: 50,
+        backSpeed: 50,
+        backDelay: 1500,
+        startDelay: 100,
         loop: true,
         showCursor: true
     });
 </script>
+
 
 <script src="js/main.js"></script>
 
