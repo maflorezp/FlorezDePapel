@@ -2082,6 +2082,13 @@ h1, h2, h3, h4, h5,
   }
 }
 
+@media (max-width: 450px) {
+  .contact-section {
+    background-size: 200%;
+    background-repeat: no-repeat;
+  }
+}
+
 .contact-section .container {
   z-index: 2;
   padding: 30px;
@@ -2469,4 +2476,8 @@ html {
   .list-unstyled {
     margin-bottom: 55px;
   }
+}
+
+#about-section p {
+  text-align: justify;
 }
