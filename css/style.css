@@ -1973,17 +1973,23 @@ h1, h2, h3, h4, h5,
   background-attachment: fixed;
 
 }
-
-@media (max-width: 680px) {
+@media (max-width: 768px) {
   .contact-section {
     background-size: 150%;
     background-repeat: no-repeat;
   }
 }
 
+@media (max-width: 680px) {
+  .contact-section {
+    background-size: 170%;
+    background-repeat: no-repeat;
+  }
+}
+
 @media (max-width: 450px) {
   .contact-section {
-    background-size: 200%;
+    background-size: 220%;
     background-repeat: no-repeat;
   }
 }
