@@ -2392,8 +2392,7 @@ canvas.flowers {
 
 .marcoFoto {
   overflow: hidden; /*esta propiedad evita que la imagen ocupe mas espacio que su contenedor*/
-  width: 40%;
-  border: 5px solid #FFF;
+  width: 30%;
   box-sizing: border-box;
   float: left;
   border-radius: 50%;
@@ -2488,6 +2487,7 @@ html {
 
 #nosotros .btn-primary {
   width: 90%;
+  text-align: center;
 }
 
 #modalContactoEnviado .modal-content {
@@ -2513,4 +2513,34 @@ html {
 #modalContactoEnviado .btn-secondary:hover {
   background: #B9A7C8;
   border: #B9A7C8;
+}
+
+.texto-contacto {
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+
+@media (max-width: 767px) {
+  .contenedor-texto-contacto {
+    margin-top: 25px;
+  }
+}
+
+@media (min-width: 768px) {
+  .contenedor-texto-contacto {
+    margin-left: 10px;
+  }
+}
+
+@media (max-width: 991px) {
+  .marcoFoto {
+    width: 40%;
+  }
+}
+
+@media (max-width: 767px) {
+  .marcoFoto {
+    width: 60%;
+  }
 }
