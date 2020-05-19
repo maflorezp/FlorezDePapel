@@ -4,8 +4,15 @@ AOS.init({
     once: true
 });
 
+function showWaiting() {
+    $('#modalContactoEspera').modal('show');
+}
+
 function sentMessage() {
     $("form#contacto")[0].reset();
+    console.log('1')
+    $('#modalContactoEspera').modal('hide');
+    console.log('2')
     $('#modalContactoEnviado').modal('show');
 }
 
@@ -31,6 +38,8 @@ jQuery(document).ready(function ($) {
             if (form.checkValidity() === false) {
                 event.preventDefault();
                 event.stopPropagation();
+            } else {
+                showWaiting();
             }
             form.classList.add('was-validated');
         }, false);

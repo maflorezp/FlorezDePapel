@@ -12,7 +12,9 @@
     <link href="fonts/icomoon/style.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap" rel="stylesheet">
 
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!--        <link href="css/bootstrap.min.css" rel="stylesheet">-->
+    <link crossorigin="anonymous" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+          integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" rel="stylesheet">
     <link href="css/jquery-ui.css" rel="stylesheet">
     <link href="css/owl.carousel.min.css" rel="stylesheet">
     <link href="css/owl.theme.default.min.css" rel="stylesheet">
@@ -97,13 +99,14 @@
 
                         <ul class="site-menu main-menu js-clone-nav mr-auto d-none d-lg-block">
                             <li><a class="nav-link" href="#inicio">Inicio</a></li>
-                            <li class="has-children"><a class="nav-link" href="#portafolio">Portafolio</a>
+                            <li class="has-children">
+                                <a class="nav-link" href="#portafolio">Portafolio</a>
                                 <ul class="dropdown">
-                                    <li><a href="proyecto-flórezdepapel.html">Flórez de papel</a></li>
-                                    <li><a href="proyecto-danceventscompany.html">Dance Events Company</a></li>
-                                    <li><a href="proyecto-pietradiluna.html">Pietra di luna</a></li>
-                                    <li><a href="proyecto-ilustración.html">Ilustración</a></li>
-                                    <li><a href="proyecto-pierdepeso.html">Pierde peso</a></li>
+                                    <li><a href="./proyecto-flórezdepapel.html#">Flórez de papel</a></li>
+                                    <li><a href="./proyecto-danceventscompany.html#">Dance Events Company</a></li>
+                                    <li><a href="./proyecto-pietradiluna.html#">Pietra di luna</a></li>
+                                    <li><a href="./proyecto-ilustración.html#">Ilustración</a></li>
+                                    <li><a href="./proyecto-pierdepeso.html#">Pierde peso</a></li>
                                 </ul>
                             </li>
                             <li><a class="nav-link" href="#nosotros">Nosotros</a></li>
@@ -273,10 +276,10 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-md-6 col-lg-3 d-flex align-self-stretch ftco-animate fadeInUp ftco-animated">
+            <div class="col-md-6 col-lg-3 d-flex align-self-stretch ftco-animate fadeInUp ftco-animated justify-content-center">
                 <div class="media block-6 services d-block text-center" data-aos="fade-up">
                     <div class="d-flex justify-content-center">
-                        <div class="icon color-3 d-flex justify-content-center mb-3"><span
+                        <div class="icon d-flex justify-content-center mb-3"><span
                                 class="align-self-center icon-file-o"></span></div>
                     </div>
                     <div class="media-body p-2 mt-3">
@@ -285,10 +288,10 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-6 col-lg-3 d-flex align-self-stretch ftco-animate fadeInUp ftco-animated">
+            <div class="col-md-6 col-lg-3 d-flex align-self-stretch ftco-animate fadeInUp ftco-animated justify-content-center">
                 <div class="media block-6 services d-block text-center" data-aos="fade-up">
                     <div class="d-flex justify-content-center">
-                        <div class="icon color-1 d-flex justify-content-center mb-3"><span
+                        <div class="icon d-flex justify-content-center mb-3"><span
                                 class="align-self-center icon-shopping-bag"></span></div>
                     </div>
                     <div class="media-body p-2 mt-3">
@@ -297,23 +300,23 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-6 col-lg-3 d-flex align-self-stretch ftco-animate fadeInUp ftco-animated">
+            <div class="col-md-6 col-lg-3 d-flex align-self-stretch ftco-animate fadeInUp ftco-animated justify-content-center">
                 <div class="media block-6 services d-block text-center" data-aos="fade-up">
                     <div class="d-flex justify-content-center">
-                        <div class="icon color-2 d-flex justify-content-center mb-3"><span
+                        <div class="icon d-flex justify-content-center mb-3"><span
                                 class="align-self-center icon-video-camera"></span></div>
                     </div>
                     <div class="media-body p-2 mt-3">
                         <h3 class="heading">Animación de logos</h3>
-                        <p>Dale un toque llamativo e innovador a tu imagen de marca.</p>
+                        <p>Dale un toque llamativo e innovador a tu marca.</p>
                     </div>
                 </div>
             </div>
 
-            <div class="col-md-6 col-lg-3 d-flex align-self-stretch ftco-animate fadeInUp ftco-animated">
+            <div class="col-md-6 col-lg-3 d-flex align-self-stretch ftco-animate fadeInUp ftco-animated justify-content-center">
                 <div class="media block-6 services d-block text-center" data-aos="fade-up">
                     <div class="d-flex justify-content-center">
-                        <div class="icon color-4 d-flex justify-content-center mb-3"><span
+                        <div class="icon d-flex justify-content-center mb-3"><span
                                 class="align-self-center icon-more"></span></div>
                     </div>
                     <div class="media-body p-2 mt-3">
@@ -391,26 +394,34 @@
             <div class="col-md-4">
                 <h2 class="footer-heading mb-4">Información de contacto</h2>
                 <ul class="list-unstyled">
-                    <li><a href="#">Medellín, Colombia</a></li>
-                    <li><a href="#">+57 300 243 6198</a></li>
-                    <li><a href="#">florezdepapel@hotmail.com</a></li>
+                    <li><a>Medellín, Colombia</a></li>
+                    <li><a>+57 300 243 6198</a></li>
+                    <li><a>florezdepapel@hotmail.com</a></li>
                 </ul>
             </div>
             <div class="col-md-4">
                 <h2 class="footer-heading mb-4">Redes sociales</h2>
-                <div class="text-center">
-                    <a class="pl-0 pr-3" href="https://www.behance.net/florezdepapel" target="_blank"><span
-                            class="icon-behance"></span></a>
-                    <a class="pl-3 pr-3" href="https://www.instagram.com/florezdepapel/" target="_blank"><span
-                            class="icon-instagram"></span></a>
-                    <a class="pl-3 pr-3" href="https://www.linkedin.com/in/luisafernandaflorez"
-                       target="_blank"><span
-                            class="icon-linkedin"></span></a>
-                    <a class="pl-3 pr-3" href="https://www.facebook.com/florezdepapel/" target="_blank"><span
-                            class="icon-facebook"></span></a>
-                    <a class="pl-3 pr-3"
-                       href="https://api.whatsapp.com/send?phone=573002436198&text=Hola,%20me%20gustar%C3%ADa%20saber%20m%C3%A1s%20de%20tus%20servicios"
-                       target="_blank"><span class="icon-whatsapp"></span></a>
+                <div class="text-center social-networks d-flex justify-content-center">
+                    <div class="d-flex justify-content-center align-items-center"><a class="pl-0 pr-3"
+                                                                                     href="https://www.behance.net/florezdepapel"
+                                                                                     target="_blank"><span
+                            class="icon-behance" style="padding-left: 17px;"></span></a></div>
+                    <div class="d-flex justify-content-center align-items-center"><a class="pl-3 pr-3"
+                                                                                     href="https://www.instagram.com/florezdepapel/"
+                                                                                     target="_blank"><span
+                            class="icon-instagram"></span></a></div>
+                    <div class="d-flex justify-content-center align-items-center"><a class="pl-3 pr-3"
+                                                                                     href="https://www.linkedin.com/in/luisafernandaflorez"
+                                                                                     target="_blank"><span
+                            class="icon-linkedin"></span></a></div>
+                    <div class="d-flex justify-content-center align-items-center"><a class="pl-3 pr-3"
+                                                                                     href="https://www.facebook.com/florezdepapel/"
+                                                                                     target="_blank"><span
+                            class="icon-facebook"></span></a></div>
+                    <div class="d-flex justify-content-center align-items-center"><a class="pl-3 pr-3"
+                                                                                     href="https://api.whatsapp.com/send?phone=573002436198&text=Hola,%20me%20gustar%C3%ADa%20saber%20m%C3%A1s%20de%20tus%20servicios"
+                                                                                     target="_blank"><span
+                            class="icon-whatsapp"></span></a></div>
                 </div>
             </div>
         </div>
@@ -422,7 +433,7 @@
                         Copyright &copy;<script>document.write(new Date().getFullYear());</script>
                         All rights reserved | This template is made with <i aria-hidden="true"
                                                                             class="icon-heart text-danger"></i>
-                        by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+                        by <a href="https://colorlib.com" target="_blank">Colorlib</a> & Luisa Flórez
                         <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                     </p>
                 </div>
@@ -450,14 +461,38 @@
         </div>
     </div>
 </div>
+<div aria-hidden="true" class="modal fade" id="modalContactoEspera" role="dialog" tabindex="-1">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content" style="background-color: transparent; border: 0;">
+            <div class="d-flex justify-content-center align-items-center" style="height: 100vh">
+                <div class="spinner-grow" role="status" style="width: 8rem; height: 8rem; color: #401746;">
+                    <span class="sr-only">Loading...</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
 </div> <!-- .site-wrap -->
 
-<script src="js/jquery-3.3.1.min.js"></script>
+
+<!--<script src="js/jquery-3.3.1.min.js"></script>-->
+<!--<script src="js/popper.min.js"></script>-->
+<!--<script src="js/bootstrap.min.js"></script>-->
+
+<script crossorigin="anonymous"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script crossorigin="anonymous"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+<script crossorigin="anonymous"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+
 <script src="js/jquery-migrate-3.0.1.min.js"></script>
 <script src="js/jquery-ui.js"></script>
-<script src="js/popper.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
 <script src="js/owl.carousel.min.js"></script>
 <script src="js/jquery.stellar.min.js"></script>
 <script src="js/jquery.countdown.min.js"></script>
