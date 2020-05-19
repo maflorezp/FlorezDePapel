@@ -2067,6 +2067,10 @@ h1, h2, h3, h4, h5,
   border-color: #B9A7C8;
 }
 
+.contact-section .btn-primary {
+  width: 100%;
+}
+
 .contact-section {
 
   background-image: url(../images/textura.jpg);
@@ -2372,7 +2376,7 @@ canvas.flowers {
   }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 425px) {
   .circulo {
     width: 350px;
     height: 350px;
@@ -2478,6 +2482,35 @@ html {
   }
 }
 
-#about-section p {
+#nosotros p {
   text-align: justify;
+}
+
+#nosotros .btn-primary {
+  width: 90%;
+}
+
+#modalContactoEnviado .modal-content {
+  border-radius: 20px;
+}
+
+#modalContactoEnviado .modal-header .close {
+  color: white;
+}
+
+#modalContactoEnviado .modal-header {
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  color: white;
+  background: #B9A7C8;
+}
+
+#modalContactoEnviado .btn-secondary {
+  background: #401746;
+  border: #401746;
+}
+
+#modalContactoEnviado .btn-secondary:hover {
+  background: #B9A7C8;
+  border: #B9A7C8;
 }
