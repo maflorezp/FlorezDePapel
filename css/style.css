@@ -2242,7 +2242,7 @@ canvas.flowers {
   height: 100%;
   position: absolute;
   pointer-events: none;
-  opacity: 30%;
+  opacity: 20%;
   left: 0;
 }
 
