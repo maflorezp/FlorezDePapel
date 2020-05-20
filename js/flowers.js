@@ -1,7 +1,7 @@
-var N_FLOWERS = 80,
+var N_FLOWERS = 25,
     PALETTE = [
-        '#FF56FF', '#FFFF00',
-        '#FF84FF', '#00FFFF'],
+        '#FFFFFF', '#FFFFFF',
+        '#FFFFFF', '#FFFFFF'],
     p = ['M', 'C', ' '],
     c, ξ, w, h, flowers = [],
     m = null;
