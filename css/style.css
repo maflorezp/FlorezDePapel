@@ -2237,13 +2237,13 @@ ftco-loader {
 }
 
 canvas.flowers {
-  display: block;
+  /* display: block; */
   width: 100%;
-  height: 110vh;
+  height: 100%;
   position: absolute;
   pointer-events: none;
   opacity: 30%;
-  margin-top: -20px;
+  left: 0;
 }
 
 .circulo {
